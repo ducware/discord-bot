@@ -10,7 +10,4 @@ services:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
     volumes:
       - ./app:/usr/src/app
-      - ./app/name.json:/usr/src/app/name.json  # Mount file name.json to volume
-      - ./app/leaderboard.json:/usr/src/app/leaderboard.json  # Mount file leaderboard.json to volume
-
     restart: unless-stopped
